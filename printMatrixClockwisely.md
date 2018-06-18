@@ -2,7 +2,8 @@
 
 #####  问题：给定一个矩阵，顺时针输出其中的元素
 -----
-![](https://github.com/EdwinMei/algorithm/raw/master/images/Matrix.png) 
+
+ ![](https://github.com/EdwinMei/algorithm/raw/master/images/printMatrix.png) 
 
 
 解决算法关键是需要找到一个循环，从上图可以看出，每次顺时针输出都可以看成是(0,0),(1,1)···(n,n)，为起点的一圈，当顺时针起始点(n,n)超过了矩阵横纵坐标的一半时，循环结束。
