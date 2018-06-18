@@ -71,6 +71,6 @@ const initMatrix = (row,col)=>{
     printMatrixClockwisely(matrix,row,col)
 }
 
-initMatrix(-5,-1)
+initMatrix(8,10)
 ```
 
