@@ -1,10 +1,35 @@
 #顺时针输出矩阵
 
 #####  问题：给定一个矩阵，顺时针输出其中的元素
------
 
- ![](https://github.com/EdwinMei/algorithm/raw/master/images/printMatrix.png) 
+------
 
+
+$$
+\begin{matrix} 
+	1 & 1 & 1& 1& 1& 1 \\
+	1 & 2&  2&  2& 2& 1\\
+	1&2&  3& 3& 2& 1\\
+	1&2&2&2&2&1\\
+	1&1&1&1&1&1\\
+\end{matrix} \tag{1}
+$$
+
+$$
+\begin{matrix} 
+	 
+	2&  2& 2&2\\
+	2&  3& 3&2\\
+	2&2&2&2\\
+	
+\end{matrix} \tag{2}
+$$
+
+$$
+\begin{matrix}  
+	3& 3
+\end{matrix} \tag{3}
+$$
 
 解决算法关键是需要找到一个循环，从上图可以看出，每次顺时针输出都可以看成是(0,0),(1,1)···(n,n)，为起点的一圈，当顺时针起始点(n,n)超过了矩阵横纵坐标的一半时，循环结束。
 
@@ -71,6 +96,6 @@ const initMatrix = (row,col)=>{
     printMatrixClockwisely(matrix,row,col)
 }
 
-initMatrix(8,10)
+initMatrix(-5,-1)
 ```
 
